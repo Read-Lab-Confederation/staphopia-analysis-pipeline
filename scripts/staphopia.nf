@@ -294,7 +294,8 @@ process mlst_ariba {
         '''
         else
         '''
-        echo "ariba requires paired end reads" > ariba-requires-pe.txt
+        mkdir ariba
+        echo "ariba requires paired end reads" > ariba/ariba-requires-pe.txt
         '''
 }
 
@@ -334,7 +335,8 @@ process resistance_ariba {
         '''
         else
         '''
-        echo "ariba requires paired end reads" > ariba-requires-pe.txt
+        mkdir resistance
+        echo "ariba requires paired end reads" > resistance/ariba-requires-pe.txt
         '''
 }
 
@@ -356,7 +358,8 @@ process virulence_ariba {
         '''
         else
         '''
-        echo "ariba requires paired end reads" > ariba-requires-pe.txt
+        mkdir virulence
+        echo "ariba requires paired end reads" > virulence/ariba-requires-pe.txt
         '''
 }
 /* ==== END RESISTANCE AND VIRULENCE ==== */

@@ -106,4 +106,12 @@ RUN chmod 755 /tmp/scripts/* \
     && mv /tmp/scripts/* /usr/local/bin \
     && rm -rf /tmp/*
 
+# tbl2asn Updates, last updated 20190306
+run cd /tmp/ \
+    && wget --quiet -O tbl2asn.gz ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/linux64.tbl2asn.gz \
+    && gunzip tbl2asn.gz \
+    && chmod 755 tbl2asn \
+    && mv tbl2asn /usr/local/bin/tbl2asn \
+    && ln -f -s /usr/local/bin/tbl2asn /opt/prokka/binaries/linux/tbl2asn
+
 WORKDIR /data
