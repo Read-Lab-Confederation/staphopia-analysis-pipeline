@@ -10,11 +10,11 @@ Currently Staphopia is setup using a Docker container.
 
 ## Pull Docker Container
 ```
-docker pull rpetit3/staphopia:112017
+docker pull rpetit3/staphopia:20190306
 ```
 
 ## Local Genome Analysis with `staphopia.py`
-Staphopia pipeline, `staphopia-ena.py`, processes local FASTQ files.
+Staphopia pipeline, `staphopia.py`, processes local FASTQ files.
 
 ### Usage
 ```
@@ -41,7 +41,7 @@ rpetit@staphopia:~/JE2$ ls -lh
 total 701M
 -rw-rw-r-- 1 rpetit rpetit 360M Oct  5  2017 JE2_R1.fastq.gz
 -rw-rw-r-- 1 rpetit rpetit 342M Oct  5  2017 JE2_R2.fastq.gz
-rpetit@staphopia:~/JE2$ docker run --rm -v $PWD:/data rpetit3/staphopia:112017 staphopia.py \
+rpetit@staphopia:~/JE2$ docker run --rm -v $PWD:/data rpetit3/staphopia:20190306 staphopia.py \
                                    --fq1 JE2_R1.fastq.gz --fq2 JE2_R2.fastq.gz --sample JE2 \
                                    --cpu 22 --is_miseq
 rpetit@staphopia:~/JE2$ ls -lh
@@ -76,7 +76,7 @@ optional arguments:
 ```
 rpetit@staphopia:~/$ mkdir SRX1114352
 rpetit@staphopia:~/SRX1114352$ cd SRX1114352
-rpetit@staphopia:~/SRX1114352$ docker run --rm -v $PWD:/data rpetit3/staphopia:112017 staphopia-ena.py SRX1114352 --cpu 22
+rpetit@staphopia:~/SRX1114352$ docker run --rm -v $PWD:/data rpetit3/staphopia:20190306 staphopia-ena.py SRX1114352 --cpu 22
 rpetit@staphopia:~/SRX1114352$ ls -lh
 total 204M
 -rw-r--r-- 1 root root   52 Apr 16 17:46 SRX1114352.md5
