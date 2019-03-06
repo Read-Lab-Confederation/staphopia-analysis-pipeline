@@ -18,7 +18,7 @@ Staphopia pipeline, `staphopia.py`, processes local FASTQ files.
 
 ### Usage
 ```
-docker run rpetit3/staphopia:112017 staphopia.py --help
+docker run rpetit3/staphopia:20190306 staphopia.py --help
 usage: staphopia.py [-h] --fq1 FASTQ --sample SAMPLE [--fq2 FASTQ]
                     [--coverage INT] [--cpu INT] [--is_miseq] [--resume]
 
@@ -59,7 +59,7 @@ Staphopia includes a modified pipeline, `staphopia-ena.py`, that automates the d
 
 ### Usage
 ```
-docker run rpetit3/staphopia:112017 staphopia-ena.py --help
+docker run rpetit3/staphopia:20190306 staphopia-ena.py --help
 usage: staphopia-ena.py [-h] [--cpu INT] [--resume] EXPERIMENT_ACCESSION
 
 A wrapper for executing Staphopia Nextflow workflow.
