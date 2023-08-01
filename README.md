@@ -1,3 +1,7 @@
+# Please use Bactopia
+
+`staphopia-ap` is available from [Bactopia](https://bactopia.github.io/). Please use Bactopia going forward as `staphopia-ap` is not longer supported.
+
 [![DOI](https://zenodo.org/badge/54082104.svg)](https://zenodo.org/badge/latestdoi/54082104)
 
 # Staphopia Analysis Pipeline
